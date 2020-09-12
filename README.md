@@ -10,8 +10,11 @@ The code snippets use Vulkan 1.2+
 
 To compile all the code snippets in the directory run the following
 
+```
 $ meson build
+
 $ meson compile -C build
+```
 
 The executables are created as ${projectdir}/build/src/*/*
 Run individual execuatable for each snippet.
@@ -19,6 +22,6 @@ Run individual execuatable for each snippet.
 ## Running all snippets
 
 To run all the snippets from the directory do the following too.
-
+```
 $ meson test -C build
-
+```
