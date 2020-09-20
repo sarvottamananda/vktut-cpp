@@ -6,8 +6,6 @@ foreach tx_file : cs1_textures
         'Texture - @0@'.format(tx_file),
         input : tx_file, 
         output : tx_file,
-        command : ['cp', '@INPUT@', '@OUTPUT@'],
-        install : true,
-        install_dir : '.'
+        command : ['cp', '@INPUT@', '@OUTPUT@']
     )
 endforeach

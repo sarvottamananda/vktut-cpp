@@ -7,8 +7,6 @@ foreach glsl_file : cs1_shaders
         command : [glsllang, '-V', '@INPUT@', '-o',  '@OUTPUT@'],
         input : glsl_file, 
         output : '@BASENAME@.spv',
-        build_by_default : true,
-        install : true,
-        install_dir : '.'
+        build_by_default : true
     )
 endforeach
